@@ -22,6 +22,9 @@ dbConnection();
 // ZJEldLLVFSBg2Hv9 => password
 //mean_user  => usuario
 
+// Directorio público
+app.use( express.static('public'));
+
 // Rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
 app.use('/api/hospitales', require('./routes/hospitales'));
