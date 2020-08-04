@@ -6,7 +6,7 @@ const UsuarioSchema = Schema({
     password: { type: String, required: true },
     img: { type: String },
     role: { type: String, required: true, default: 'USER_ROLE' },
-    google: { type: String, default: false }
+    google: { type: Boolean, default: false }
 });
 
 UsuarioSchema.method('toJSON', function() { //Es para cambiar _id por uid no es necesario 
